@@ -1,4 +1,4 @@
-# projeto-interactive-card-metor-
+# Projeto-interactive-card-metor-
 
 ## fotos do projeto![2023-06-03](https://github.com/marcosaureliosl/projeto-interactive-card-metor-/assets/127764997/1c9611fd-af15-49ce-ada1-73ecc713da77)
 ![2023-06-03 (1)](https://github.com/marcosaureliosl/projeto-interactive-card-metor-/assets/127764997/a13fc6b9-45f0-4b62-a4e8-3af9a41cff40)
@@ -23,12 +23,65 @@ O que deve ser capazes de fazer no Projeto?
 
 # Demo do Projeto
 
-[Clique aqui]() para visualizar o Projeto.
+[Clique aqui](https://marcosaureliosl.github.io/projeto-interactive-card-metor-/) para visualizar o desafio.
 
-[Clique aqui]() para visualizar o codigo e apoeveita e da uma estrela.
+[Clique aqui](https://github.com/marcosaureliosl) meu GitHub.
 
 
-# O que aprendi de novo
+# O que aprendi de novo!
+
+```html
+<input
+  oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+  type="number"
+  minlength="2"
+  maxlength="2"
+  placeholder="AA"
+  id="card_year"
+  required
+/>
+```
+
+Este código HTML representa um campo de input para o ano de um cartão, com algumas configurações específicas:
+
+- `oninput` é um evento que é acionado quando o valor do campo é alterado. Neste caso, o código associado a esse evento impede que o valor digitado no campo seja maior do que o valor definido em `maxlength`. Se o valor digitado for maior, o código corta o excesso de caracteres.
+
+- `type="number"` define o tipo de input como numérico, o que significa que apenas números são permitidos no campo.
+
+- `minlength="2"` define o tamanho mínimo do valor que pode ser digitado no campo, nesse caso, 2 caracteres.
+
+- `maxlength="2"` define o tamanho máximo do valor que pode ser digitado no campo, também 2 caracteres.
+
+- `placeholder="AA"` define um texto de exemplo que é exibido dentro do campo antes que o usuário digite algum valor. Nesse caso, o exemplo é "AA".
+
+- `id="card_year"` define um identificador único para o campo, que pode ser usado para manipular ou estilizar o campo através de CSS ou JavaScript.
+
+- `required` indica que o campo é obrigatório e deve ser preenchido pelo usuário antes que o formulário seja enviado.
+
+Essas configurações são úteis ao criar um campo de input para o ano de um cartão, garantindo que o valor digitado seja válido e limitado ao tamanho necessário.
+
+
+
+
+`<input>`: Esta é a tag HTML utilizada para criar um elemento de input.
+
+`oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"`: Este é um atributo de evento chamado "oninput". Ele especifica o código JavaScript a ser executado quando o valor do campo de input é alterado. Neste caso, o código verifica se o comprimento do valor inserido no campo excede o valor definido em "maxlength" (2 caracteres). Se exceder, o código corta o excesso de caracteres e atualiza o valor do campo.
+
+`type="number"`: Este é um atributo que define o tipo de input. Neste caso, o tipo é definido como "number", o que significa que apenas números serão aceitos no campo.
+
+`minlength="2"`: Este é um atributo que define o tamanho mínimo do valor inserido no campo. Aqui, é definido como 2 caracteres, o que significa que o valor precisa ter pelo menos 2 caracteres.
+
+`maxlength="2"`: Este é um atributo que define o tamanho máximo do valor inserido no campo. Aqui, também é definido como 2 caracteres, o que significa que o valor não pode ter mais de 2 caracteres.
+
+`placeholder="AA"`: Este é um atributo que define um texto de exemplo que será exibido no campo antes que o usuário digite algum valor. Neste caso, o exemplo é definido como "AA".
+
+`id="card_year"`: Este é um atributo que atribui um identificador único ao campo de input. Ele pode ser usado para referenciar o campo em JavaScript ou CSS.
+
+`required`: Este é um atributo que indica que o campo é obrigatório e deve ser preenchido antes de enviar o formulário.
+
+Em resumo, esse trecho de código HTML cria um campo de input numérico com um comprimento mínimo e máximo de 2 caracteres. Ele também tem um texto de exemplo ("AA") que desaparece quando o usuário começa a digitar. Além disso, o campo é obrigatório e possui um identificador único chamado "card_year".
+
+##
 
 ```css
 input::-webkit-inner-spin-button,
